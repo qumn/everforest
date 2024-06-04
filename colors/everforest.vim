@@ -1714,6 +1714,10 @@ highlight! link DashboardHeader Yellow
 highlight! link DashboardCenter Green
 highlight! link DashboardShortcut Red
 highlight! link DashboardFooter Orange
+highlight! link DashboardKey Red
+highlight! link DashboardDesc Blue
+highlight! link DashboardKey Red
+call everforest#highlight('DashboardIcon', s:palette.blue, s:palette.none, 'bold')
 " syn_end }}}
 " syn_begin: markdown {{{
 " builtin: {{{
