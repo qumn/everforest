@@ -116,6 +116,7 @@ else
     call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
   endif
 endif
+call everforest#highlight('CursorLineNr', s:palette.orange, s:palette.none, 'bold')
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
 call everforest#highlight('DiffChange', s:palette.none, s:palette.bg_blue)
 call everforest#highlight('DiffDelete', s:palette.none, s:palette.bg_red)
@@ -3054,4 +3055,6 @@ call everforest#highlight('MasonMutedBlock', s:palette.bg0, s:palette.grey0)
 " syn_end }}}
 " }}}
 
+" excute mysql color scheme
+lua require('cstm').load()
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
